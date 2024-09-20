@@ -2,6 +2,8 @@
 
 struct Position2d;
 
+// Map2d is a 2D coordinate plane bounded by four edges.
+
 struct Map2d
 {
 	int minX;

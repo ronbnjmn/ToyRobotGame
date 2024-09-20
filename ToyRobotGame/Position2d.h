@@ -2,6 +2,9 @@
 
 #include <string>
 
+// Position2d represents a 2D position vector.
+// It has X and Y coordinates and direction (north, east, west, south).
+
 struct Position2d
 {
 	int x;

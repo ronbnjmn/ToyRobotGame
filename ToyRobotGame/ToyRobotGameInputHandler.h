@@ -2,6 +2,8 @@
 
 #include <string>
 
+// ToyRobotGameInputHandler - class that handles string user input
+
 class ToyRobotGameInputHandler
 {
 public:

@@ -5,6 +5,9 @@
 class ToyRobot;
 class ToyRobotGameView;
 
+// Command - class that can perform actions to its receiver
+// Subclasses implement the Command interface to perform specific actions on their receivers
+
 //** Command
 
 class Command
