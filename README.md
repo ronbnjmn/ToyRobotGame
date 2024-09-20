@@ -16,7 +16,7 @@ You play the game by moving the toy robot within the table that's 5 units long a
 
 1. The `PLACE X,Y,Direction` command
 
-   Begin by placing the toy robot on the table with the PLACE command. This command accepts three parameters separated by a comma. The first two parameters specify the position of the robot relative to the south-west corner of the table which we call the origin, the position of which is `0, 0`. The third parameter specifies the direction the toy robot will face.
+   Begin by placing the toy robot on the table with the `PLACE` command. This command accepts three parameters separated by a comma. The first two parameters specify the position of the robot relative to the south-west corner of the table which we call the origin, the position of which is `0, 0`. The third parameter specifies the direction the toy robot will face.
 
    For example, the following command places the toy robot at 1 unit to the east, 2 units to the north of the origin, and facing the north direction, at `1, 2, NORTH`.
 
@@ -26,17 +26,17 @@ You play the game by moving the toy robot within the table that's 5 units long a
 
 2. The `MOVE` command
 
-   You can move the toy robot 1 unit to the direction it's facing with the MOVE command. For example, calling this command after placing the toy robot as in our example, will move the position of the toy robot new position will now be at `1, 3, NORTH`. 
+   You can move the toy robot 1 unit to the direction it's facing with the `MOVE` command. For example, calling this command after placing the toy robot at `1, 2, NORTH`, will move the position of the toy robot to `1, 3, NORTH`. 
 
 3. The `LEFT` and `RIGHT` commands
 
-   You can turn the toy robot to face a different direction with the LEFT and RIGHT commands. The LEFT command will turn the robot to its left by 90&deg;, while the right command will turn the robot to its right by 90&deg;.
+   You can turn the toy robot to face a different direction with the `LEFT` and `RIGHT`commands. The `LEFT` command will turn the robot to its left by 90&deg;, while the `RIGHT` command will turn the robot to its right by 90&deg;.
 
 4. The `REPORT` command
 
-   You can query the exact position of the toy robot with the REPORT command.
+   You can query the exact position of the toy robot with the `REPORT` command.
 
-That's it. You can enjoy the game by moving, placing, or turning the robot in any which way you want. Unfortunately, you can't place the robot anywhere but on the table, you can't take the robot off the table, or let it fall off the table. The game won't let you.
+That's it. You can enjoy the game by moving, placing, or turning the robot in any which way you want. Unfortunately, you can't place the robot outside the table, you can't take it off the table, or let it fall off the table. The game won't let you. If you want to quit the game, enter `QUIT`.
 
 ## Testing
 
@@ -56,7 +56,7 @@ You can run the included test.py script to test the app functionality. Python 3.
    ```
    PS> Set-Location <project directory>
    ```
-2. Run the python script
+2. Run the python test script
 
    ```
    PS> python.exe .\test.py
