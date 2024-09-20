@@ -15,12 +15,12 @@ StringTokenizer::StringTokenizer(const std::string& string, const std::string& d
 	tokens.push_back(string.substr(tokenPos));
 }
 
-std::string& StringTokenizer::operator[](size_t index)
+const std::string& StringTokenizer::operator[](size_t index) const
 {
 	return tokens[index];
 }
 
-size_t StringTokenizer::count()
+size_t StringTokenizer::count() const
 {
 	return tokens.size();
 }

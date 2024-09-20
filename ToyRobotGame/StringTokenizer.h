@@ -9,8 +9,8 @@ class StringTokenizer
 {
 public:
 	StringTokenizer(const std::string& string, const std::string& delimiter = " ");
-	std::string& operator[](size_t index);
-	size_t count();
+	const std::string& operator[](size_t index) const;
+	size_t count() const;
 
 private:
 	std::vector<std::string> tokens;
