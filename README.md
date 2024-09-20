@@ -59,5 +59,5 @@ You can run the included test.py script to test the app functionality. Python 3.
 2. Run the python test script
 
    ```
-   PS> python.exe .\test.py
+   PS> python .\test.py
    ```
