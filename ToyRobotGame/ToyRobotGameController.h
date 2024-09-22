@@ -18,7 +18,7 @@ class ToyRobotGameController
 public:
 	ToyRobotGameController(ToyRobot& _toyRobot, ToyRobotGameView& _view);
 
-	void onUserInput(const std::string& input);
+	void onUserInput(const std::string& input) override;
 
 private:
 	void initCommands();
